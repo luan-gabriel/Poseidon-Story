@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSEIDON STORY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="NomeDaLoja.css">
+    <link rel="stylesheet" type="text/css" href="Slide.css">
+    <link rel="stylesheet" type="text/css" href="produtosDatelaInicial.css">
+    <link rel="stylesheet" type="text/css" href="todosProdutosDaCategoria.css">
+    <link rel="stylesheet" type="text/css" href="nomeDeCadaCategoria.css">
+
+</head>
+
+<body>
+    <header>
+
+        <button class="NomeDaLoja"> POSEIDON STORY ! <br> parceira shopee</button>
+
+
+    </header>
+    <nav>
+        <ul>
+            <li style="margin-bottom: 8px; margin-top: 2rem;">
+                <a class="textcategorias" href="./camisas.html">CAMISAS</a>
+                <img src="/img/camisa.png" alt="" style="width: 2rem;">
+            </li>
+
+            <li style="margin-bottom: 8px;">
+                <a class="textcategorias" href="./bone.html">BONÉS</a>
+                <img src="/img/cap.png" alt="" style="width: 2rem;">
+            </li>
+
+            <li style="margin-bottom: 8px;">
+                <a class="textcategorias" href="./calcasEshorts.html">SHORTS E CALÇAS</a>
+                <img src="/img/shorts.png" alt="" style="width: 2rem;">
+            </li>
+
+            <li style="margin-bottom: 8px;">
+                <a class="textcategorias" href="./tenis.html">TENÍS</a>
+                <img src="/img/tenis.png" alt="" style="width: 2rem;">
+            </li>
+
+            <li style="margin-bottom: 8px;">
+                <a class="textcategorias" href="oculos.html">OCULOS</a>
+                <img src="/img/oculos-de-sol.png" alt="" style="width: 2rem;">
+            </li>
+
+
+        </ul>
+    </nav>
+
+
+    <main>
+
+        <div id="slide-container">
+            <img src="https://www.dhresource.com/0x0/f2/albu/g18/M00/FE/E9/rBNaNmDDSDqASs4RAAEeg9EcNyY939.jpg"
+                alt="Imagem 1">
+            <img src="https://a-static.mlcdn.com.br/800x560/camisera-2pac-tupac-shakur-hip-hop-rap-gangster-thug-life-street-inverno-geek/invernogeekconfeccoeseacessorios/15887137355/3e435a1db514b70087d86fa1292890f8.jpeg"
+                alt="Imagem 2">
+            <img src="https://www.guller.com.br/8921-large_default/camiseta-refletiva-estampada-com-capuz-estilo-hip-hop-streetwear-moderna-hyper-masculino.jpg"
+                alt="Imagem 3">
+        </div>
+
+        <script>
+            let currentImageIndex = 0;
+            const images = document.querySelectorAll('#slide-container img');
+
+            function showNextImage() {
+                images[currentImageIndex].style.display = 'none';
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                images[currentImageIndex].style.display = 'block';
+            }
+
+            function startSlideShow() {
+                setInterval(showNextImage, 3000); // Alterna a imagem a cada 3 segundos (3000 milissegundos)
+            }
+
+            // Esconde todas as imagens, exceto a primeira
+            for (let i = 1; i < images.length; i++) {
+                images[i].style.display = 'none';
+            }
+
+            // Inicia o slide show
+            startSlideShow();
+        </script>
+
+
+
+         <!--3 produtos por categoria e um botão para acessar outras peças-->
+        
+        <button class="NomeDaLoja" style="top: 45px;"> Camisetas</button>
+        <div class="produtosDatelaInicial">
+            <div class="card" style="width: 18rem;">
+                <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/339/675/products/a15c5cad-a0d4-4005-96f8-a04fd3f16a581-6f2d2b4838ed5cc06f16291563553870-480-0.jpeg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Camiseta Basica Camisa Algodao Medusa Mitologia Grega</p>
+                    <a href="https://shope.ee/7f6OH5CKWq" class="btn btn-primary">Acessar produto</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="https://images-americanas.b2w.io/produtos/5954509271/imagens/camiseta-racionais-mcs-sobrevivendo-no-inferno-rap-nacional-hip-hop-street-wear-de-quebrada/5954509449_1_large.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Camisa Camiseta Racionais Mcs Sobrevivendo no inferno</p>
+                    <a href="https://shope.ee/qG48kafyK" class="btn btn-primary">Acessar pruduto</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="https://static.zattini.com.br/produtos/tenis-oakley-modoc-low-masculino/76/D63-1457-476/D63-1457-476_detalhe1.jpg?ts=1601321184"
+                    alt="...">
+                <div class="card-body">
+                    <p class="card-text">Tenis Oakley Modoc Now Masculino</p>
+                    <a href="https://shope.ee/gx9s66HH" class="btn btn-primary">Acessar produto</a>
+                </div>
+            </div>
+
+            <a class="fancy" href="#">
+                <span class="top-key"></span>
+                <span class="text">Acessar <br/> todos produtos <br/> desta categoria</span>
+              </a>
+
+        </div>
+
+        <!---->
+
+
+        <button class="NomeDaLoja" style="top: 45px;"> Bonés</button>
+        <div class="produtosDatelaInicial">
+            <div class="card" style="width: 18rem;">
+                <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/339/675/products/a15c5cad-a0d4-4005-96f8-a04fd3f16a581-6f2d2b4838ed5cc06f16291563553870-480-0.jpeg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Camiseta Basica Camisa Algodao Medusa Mitologia Grega</p>
+                    <a href="https://shope.ee/7f6OH5CKWq" class="btn btn-primary">Acessar produto</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="https://images-americanas.b2w.io/produtos/5954509271/imagens/camiseta-racionais-mcs-sobrevivendo-no-inferno-rap-nacional-hip-hop-street-wear-de-quebrada/5954509449_1_large.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Camisa Camiseta Racionais Mcs Sobrevivendo no inferno</p>
+                    <a href="https://shope.ee/qG48kafyK" class="btn btn-primary">Acessar pruduto</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="https://static.zattini.com.br/produtos/tenis-oakley-modoc-low-masculino/76/D63-1457-476/D63-1457-476_detalhe1.jpg?ts=1601321184"
+                    alt="...">
+                <div class="card-body">
+                    <p class="card-text">Tenis Oakley Modoc Now Masculino</p>
+                    <a href="https://shope.ee/gx9s66HH" class="btn btn-primary">Acessar produto</a>
+                </div>
+            </div>
+
+            <a class="fancy" href="#">
+                <span class="top-key"></span>
+                <span class="text">Acessar <br/> todos produtos <br/> desta categoria</span>
+              </a>
+
+        </div>
+
+        <!---->
+
+
+        <button class="NomeDaLoja" style="top: 45px;"> Shorts e Calças</button>
+        <div class="produtosDatelaInicial">
+            <div class="card" style="width: 18rem;">
+                <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/339/675/products/a15c5cad-a0d4-4005-96f8-a04fd3f16a581-6f2d2b4838ed5cc06f16291563553870-480-0.jpeg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Camiseta Basica Camisa Algodao Medusa Mitologia Grega</p>
+                    <a href="https://shope.ee/7f6OH5CKWq" class="btn btn-primary">Acessar produto</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="https://images-americanas.b2w.io/produtos/5954509271/imagens/camiseta-racionais-mcs-sobrevivendo-no-inferno-rap-nacional-hip-hop-street-wear-de-quebrada/5954509449_1_large.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Camisa Camiseta Racionais Mcs Sobrevivendo no inferno</p>
+                    <a href="https://shope.ee/qG48kafyK" class="btn btn-primary">Acessar pruduto</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="https://static.zattini.com.br/produtos/tenis-oakley-modoc-low-masculino/76/D63-1457-476/D63-1457-476_detalhe1.jpg?ts=1601321184"
+                    alt="...">
+                <div class="card-body">
+                    <p class="card-text">Tenis Oakley Modoc Now Masculino</p>
+                    <a href="https://shope.ee/gx9s66HH" class="btn btn-primary">Acessar produto</a>
+                </div>
+            </div>
+
+            <a class="fancy" href="#">
+                <span class="top-key"></span>
+                <span class="text">Acessar <br/> todos produtos <br/> desta categoria</span>
+              </a>
+
+        </div>
+
+        <!---->
+
+        <button class="NomeDaLoja" style="top: 45px;"> Tenís</button>
+        <div class="produtosDatelaInicial">
+            <div class="card" style="width: 18rem;">
+                <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/339/675/products/a15c5cad-a0d4-4005-96f8-a04fd3f16a581-6f2d2b4838ed5cc06f16291563553870-480-0.jpeg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Camiseta Basica Camisa Algodao Medusa Mitologia Grega</p>
+                    <a href="https://shope.ee/7f6OH5CKWq" class="btn btn-primary">Acessar produto</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="https://images-americanas.b2w.io/produtos/5954509271/imagens/camiseta-racionais-mcs-sobrevivendo-no-inferno-rap-nacional-hip-hop-street-wear-de-quebrada/5954509449_1_large.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Camisa Camiseta Racionais Mcs Sobrevivendo no inferno</p>
+                    <a href="https://shope.ee/qG48kafyK" class="btn btn-primary">Acessar pruduto</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="https://static.zattini.com.br/produtos/tenis-oakley-modoc-low-masculino/76/D63-1457-476/D63-1457-476_detalhe1.jpg?ts=1601321184"
+                    alt="...">
+                <div class="card-body">
+                    <p class="card-text">Tenis Oakley Modoc Now Masculino</p>
+                    <a href="https://shope.ee/gx9s66HH" class="btn btn-primary">Acessar produto</a>
+                </div>
+            </div>
+
+            <a class="fancy" href="#">
+                <span class="top-key"></span>
+                <span class="text">Acessar <br/> todos produtos <br/> desta categoria</span>
+              </a>
+
+        </div>
+
+
+        <!---->
+
+
+        <button class="NomeDaLoja" style="top: 45px;"> Oculos</button>
+        <div class="produtosDatelaInicial">
+            <div class="card" style="width: 18rem;">
+                <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/339/675/products/a15c5cad-a0d4-4005-96f8-a04fd3f16a581-6f2d2b4838ed5cc06f16291563553870-480-0.jpeg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Camiseta Basica Camisa Algodao Medusa Mitologia Grega</p>
+                    <a href="https://shope.ee/7f6OH5CKWq" class="btn btn-primary">Acessar produto</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="https://images-americanas.b2w.io/produtos/5954509271/imagens/camiseta-racionais-mcs-sobrevivendo-no-inferno-rap-nacional-hip-hop-street-wear-de-quebrada/5954509449_1_large.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Camisa Camiseta Racionais Mcs Sobrevivendo no inferno</p>
+                    <a href="https://shope.ee/qG48kafyK" class="btn btn-primary">Acessar pruduto</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="https://static.zattini.com.br/produtos/tenis-oakley-modoc-low-masculino/76/D63-1457-476/D63-1457-476_detalhe1.jpg?ts=1601321184"
+                    alt="...">
+                <div class="card-body">
+                    <p class="card-text">Tenis Oakley Modoc Now Masculino</p>
+                    <a href="https://shope.ee/gx9s66HH" class="btn btn-primary">Acessar produto</a>
+                </div>
+            </div>
+
+            <a class="fancy" href="#">
+                <span class="top-key"></span>
+                <span class="text">Acessar <br/> todos produtos <br/> desta categoria</span>
+              </a>
+
+        </div>
+
+
+
+    </main>
+</body>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,53 @@
+/* este css e referente a estrutura do sit e navegação entre telas  */
+
+
+
+
+body {
+    background-image: url('./img/poseidon.png');
+    background-attachment: fixed;
+    background-size: 5%;
+    
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #a245aa;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color:#a245aa;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+main {
+    margin-left: 260px;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+
+    main {
+        margin: 10px;
+    }
+}
+
+.textcategorias{
+    color: #ffffff;
+}
+
